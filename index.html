@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet"> 
+  <title>ProQol-IV BR</title>
+</head>
+<body>
+  <header>
+    <h1>ProQol-IV</h1>
+    <p>Considere cada uma das seguintes questões sobre você e sua situação atual. Escolha a opção que melhor reflete como você se sentiu nos últimos 30 dias. Considere a sua experiência como profissional independente do local de trabalho.</p>
+  </header>
+  <main>
+    <section class="sc">
+      <form>
+        <fieldset>
+          <legend>SC</legend>
+          <div class="question">
+            <span>3. Sinto-me satisfeito(a) por ser capaz de ajudar as pessoas.</span>
+            <div class="options">
+              <div>
+                <input id="never-3" type="radio" name="three" value="0" onclick="values.updateArrayOne(this.value, 0)" checked>
+                <label for="never-3">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-3" type="radio" name="three" value="1" onclick="values.updateArrayOne(this.value, 0)">
+                <label for="rarely-3">Raramente</label>
+              </div>
+              <div>
+                <input id="few-3" type="radio" name="three" value="2" onclick="values.updateArrayOne(this.value, 0)">
+                <label for="few-3">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-3" type="radio" name="three" value="3" onclick="values.updateArrayOne(this.value, 0)">
+                <label for="sometimes-3">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-3" type="radio" name="three" value="4" onclick="values.updateArrayOne(this.value, 0)">
+                <label for="many-3">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-3" type="radio" name="three" value="5" onclick="values.updateArrayOne(this.value, 0)">
+                <label for="always-3">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>6. Sinto-me animado(a) depois de atender as pessoas que ajudo.</span>
+            <div class="options">
+              <div>
+                <input id="never-6" type="radio" name="six" value="0" onclick="values.updateArrayOne(this.value, 1)" checked>
+                <label for="never-6">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-6" type="radio" name="six" value="1" onclick="values.updateArrayOne(this.value, 1)">
+                <label for="rarely-6">Raramente</label>
+              </div>
+              <div>
+                <input id="few-6" type="radio" name="six" value="2" onclick="values.updateArrayOne(this.value, 1)">
+                <label for="few-6">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-6" type="radio" name="six" value="3" onclick="values.updateArrayOne(this.value, 1)">
+                <label for="sometimes-6">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-6" type="radio" name="six" value="4" onclick="values.updateArrayOne(this.value, 1)">
+                <label for="many-6">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-6" type="radio" name="six" value="5" onclick="values.updateArrayOne(this.value, 1)">
+                <label for="always-6">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>12. Gosto do meu trabalho ajudando pessoas.</span>
+            <div class="options">
+              <div>
+                <input id="never-12" type="radio" name="twelve" value="0" onclick="values.updateArrayOne(this.value, 2)" checked>
+                <label for="never-12">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-12" type="radio" name="twelve" value="1" onclick="values.updateArrayOne(this.value, 2)">
+                <label for="rarely-12">Raramente</label>
+              </div>
+              <div>
+                <input id="few-12" type="radio" name="twelve" value="2" onclick="values.updateArrayOne(this.value, 2)">
+                <label for="few-12">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-12" type="radio" name="twelve" value="3" onclick="values.updateArrayOne(this.value, 2)">
+                <label for="sometimes-12">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-12" type="radio" name="twelve" value="4" onclick="values.updateArrayOne(this.value, 2)">
+                <label for="many-12">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-12" type="radio" name="twelve" value="5" onclick="values.updateArrayOne(this.value, 2)">
+                <label for="always-12">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>16. Sinto-me satisfeito(a) por conseguir me manter atualizado em relação a técnicas e procedimentos de atendimento.</span>
+            <div class="options">
+              <div>
+                <input id="never-16" type="radio" name="sixteen" value="0" onclick="values.updateArrayOne(this.value, 3)" checked>
+                <label for="never-16">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-16" type="radio" name="sixteen" value="1" onclick="values.updateArrayOne(this.value, 3)">
+                <label for="rarely-16">Raramente</label>
+              </div>
+              <div>
+                <input id="few-16" type="radio" name="sixteen" value="2" onclick="values.updateArrayOne(this.value, 3)">
+                <label for="few-16">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-16" type="radio" name="sixteen" value="3" onclick="values.updateArrayOne(this.value, 3)">
+                <label for="sometimes-16">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-16" type="radio" name="sixteen" value="4" onclick="values.updateArrayOne(this.value, 3)">
+                <label for="many-16">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-16" type="radio" name="sixteen" value="5" onclick="values.updateArrayOne(this.value, 3)">
+                <label for="always-16">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>18. Sinto-me satisfeito(a) com meu trabalho.</span>
+            <div class="options">
+              <div>
+                <input id="never-18" type="radio" name="eighteen" value="0" onclick="values.updateArrayOne(this.value, 4)" checked>
+                <label for="never-18">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-18" type="radio" name="eighteen" value="1" onclick="values.updateArrayOne(this.value, 4)">
+                <label for="rarely-18">Raramente</label>
+              </div>
+              <div>
+                <input id="few-18" type="radio" name="eighteen" value="2" onclick="values.updateArrayOne(this.value, 4)">
+                <label for="few-18">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-18" type="radio" name="eighteen" value="3" onclick="values.updateArrayOne(this.value, 4)">
+                <label for="sometimes-18">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-18" type="radio" name="eighteen" value="4" onclick="values.updateArrayOne(this.value, 4)">
+                <label for="many-18">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-18" type="radio" name="eighteen" value="5" onclick="values.updateArrayOne(this.value, 4)">
+                <label for="always-18">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>20. Tenho bons pensamentos e sentimentos em relação àqueles que eu ajudo e sobre como poderia ajudá-los.</span>
+            <div class="options">
+              <div>
+                <input id="never-20" type="radio" name="twenty" value="0" onclick="values.updateArrayOne(this.value, 5)" checked>
+                <label for="never-20">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-20" type="radio" name="twenty" value="1" onclick="values.updateArrayOne(this.value, 5)">
+                <label for="rarely-20">Raramente</label>
+              </div>
+              <div>
+                <input id="few-20" type="radio" name="twenty" value="2" onclick="values.updateArrayOne(this.value, 5)">
+                <label for="few-20">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-20" type="radio" name="twenty" value="3" onclick="values.updateArrayOne(this.value, 5)">
+                <label for="sometimes-20">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-20" type="radio" name="twenty" value="4" onclick="values.updateArrayOne(this.value, 5)">
+                <label for="many-20">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-20" type="radio" name="twenty" value="5" onclick="values.updateArrayOne(this.value, 5)">
+                <label for="always-20">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>22. Acredito que posso fazer diferença através do meu trabalho.</span>
+            <div class="options">
+              <div>
+                <input id="never-22" type="radio" name="twenty-two" value="0" onclick="values.updateArrayOne(this.value, 6)" checked>
+                <label for="never-22">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-22" type="radio" name="twenty-two" value="1" onclick="values.updateArrayOne(this.value, 6)">
+                <label for="rarely-22">Raramente</label>
+              </div>
+              <div>
+                <input id="few-22" type="radio" name="twenty-two" value="2" onclick="values.updateArrayOne(this.value, 6)">
+                <label for="few-22">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-22" type="radio" name="twenty-two" value="3" onclick="values.updateArrayOne(this.value, 6)">
+                <label for="sometimes-22">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-22" type="radio" name="twenty-two" value="4" onclick="values.updateArrayOne(this.value, 6)">
+                <label for="many-22">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-22" type="radio" name="twenty-two" value="5" onclick="values.updateArrayOne(this.value, 6)">
+                <label for="always-22">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>24. Estou orgulhoso(a) do que posso fazer para ajudar.</span>
+            <div class="options">
+              <div>
+                <input id="never-24" type="radio" name="twenty-four" value="0" onclick="values.updateArrayOne(this.value, 7)" checked>
+                <label for="never-24">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-24" type="radio" name="twenty-four" value="1" onclick="values.updateArrayOne(this.value, 7)">
+                <label for="rarely-24">Raramente</label>
+              </div>
+              <div>
+                <input id="few-24" type="radio" name="twenty-four" value="2" onclick="values.updateArrayOne(this.value, 7)">
+                <label for="few-24">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-24" type="radio" name="twenty-four" value="3" onclick="values.updateArrayOne(this.value, 7)">
+                <label for="sometimes-24">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-24" type="radio" name="twenty-four" value="4" onclick="values.updateArrayOne(this.value, 7)">
+                <label for="many-24">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-24" type="radio" name="twenty-four" value="5" onclick="values.updateArrayOne(this.value, 7)">
+                <label for="always-24">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>27. Ocorre-me que sou bem sucedido(a) no meu trabalho.</span>
+            <div class="options">
+              <div>
+                <input id="never-27" type="radio" name="twenty-seven" value="0" onclick="values.updateArrayOne(this.value, 8)" checked>
+                <label for="never-27">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-27" type="radio" name="twenty-seven" value="1" onclick="values.updateArrayOne(this.value, 8)">
+                <label for="rarely-27">Raramente</label>
+              </div>
+              <div>
+                <input id="few-27" type="radio" name="twenty-seven" value="2" onclick="values.updateArrayOne(this.value, 8)">
+                <label for="few-27">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-27" type="radio" name="twenty-seven" value="3" onclick="values.updateArrayOne(this.value, 8)">
+                <label for="sometimes-27">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-27" type="radio" name="twenty-seven" value="4" onclick="values.updateArrayOne(this.value, 8)">
+                <label for="many-27">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-27" type="radio" name="twenty-seven" value="5" onclick="values.updateArrayOne(this.value, 8)">
+                <label for="always-27">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>30. Estou feliz por ter escolhido este trabalho.</span>
+            <div class="options">
+              <div>
+                <input id="never-30" type="radio" name="thirty" value="0" onclick="values.updateArrayOne(this.value, 9)" checked>
+                <label for="never-30">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-30" type="radio" name="thirty" value="1" onclick="values.updateArrayOne(this.value, 9)">
+                <label for="rarely-30">Raramente</label>
+              </div>
+              <div>
+                <input id="few-30" type="radio" name="thirty" value="2" onclick="values.updateArrayOne(this.value, 9)">
+                <label for="few-30">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-30" type="radio" name="thirty" value="3" onclick="values.updateArrayOne(this.value, 9)">
+                <label for="sometimes-30">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-30" type="radio" name="thirty" value="4" onclick="values.updateArrayOne(this.value, 9)">
+                <label for="many-30">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-30" type="radio" name="thirty" value="5" onclick="values.updateArrayOne(this.value, 9)">
+                <label for="always-30">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="first-total">
+            <span>Total: 0</span>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="bn">
+      <form>
+        <fieldset>
+          <legend>BN</legend>
+          <div class="question">
+            <span>1. Sinto-me feliz.</span>
+            <div class="options">
+              <div>
+                <input id="never-1" type="radio" name="one" value="0" onclick="values.updateArrayTwo(this.value, 0)" checked>
+                <label for="never-1">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-1" type="radio" name="one" value="5" onclick="values.updateArrayTwo(this.value, 0)">
+                <label for="rarely-1">Raramente</label>
+              </div>
+              <div>
+                <input id="few-1" type="radio" name="one" value="4" onclick="values.updateArrayTwo(this.value, 0)">
+                <label for="few-1">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-1" type="radio" name="one" value="3" onclick="values.updateArrayTwo(this.value, 0)">
+                <label for="sometimes-1">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-1" type="radio" name="one" value="2" onclick="values.updateArrayTwo(this.value, 0)">
+                <label for="many-1">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-1" type="radio" name="one" value="1" onclick="values.updateArrayTwo(this.value, 0)">
+                <label for="always-1">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>4. Sinto-me ligado aos outros.</span>
+            <div class="options">
+              <div>
+                <input id="never-4" type="radio" name="four" value="0" onclick="values.updateArrayTwo(this.value, 1)" checked>
+                <label for="never-4">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-4" type="radio" name="four" value="5" onclick="values.updateArrayTwo(this.value, 1)">
+                <label for="rarely-4">Raramente</label>
+              </div>
+              <div>
+                <input id="few-4" type="radio" name="four" value="4" onclick="values.updateArrayTwo(this.value, 1)">
+                <label for="few-4">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-4" type="radio" name="four" value="3" onclick="values.updateArrayTwo(this.value, 1)">
+                <label for="sometimes-4">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-4" type="radio" name="four" value="2" onclick="values.updateArrayTwo(this.value, 1)">
+                <label for="many-4">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-4" type="radio" name="four" value="1" onclick="values.updateArrayTwo(this.value, 1)">
+                <label for="always-4">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>8. Perco sono por causa das experiências traumáticas de pessoas que atendo.</span>
+            <div class="options">
+              <div>
+                <input id="never-8" type="radio" name="eight" value="0" onclick="values.updateArrayTwo(this.value, 2)" checked>
+                <label for="never-8">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-8" type="radio" name="eight" value="1" onclick="values.updateArrayTwo(this.value, 2)">
+                <label for="rarely-8">Raramente</label>
+              </div>
+              <div>
+                <input id="few-8" type="radio" name="eight" value="2" onclick="values.updateArrayTwo(this.value, 2)">
+                <label for="few-8">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-8" type="radio" name="eight" value="3" onclick="values.updateArrayTwo(this.value, 2)">
+                <label for="sometimes-8">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-8" type="radio" name="eight" value="4" onclick="values.updateArrayTwo(this.value, 2)">
+                <label for="many-8">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-8" type="radio" name="eight" value="5" onclick="values.updateArrayTwo(this.value, 2)">
+                <label for="always-8">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>10. Sinto-me aprisionado(a) pelo meu trabalho de cuidar dos outros.</span>
+            <div class="options">
+              <div>
+                <input id="never-10" type="radio" name="ten" value="0" onclick="values.updateArrayTwo(this.value, 3)" checked>
+                <label for="never-10">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-10" type="radio" name="ten" value="1" onclick="values.updateArrayTwo(this.value, 3)">
+                <label for="rarely-10">Raramente</label>
+              </div>
+              <div>
+                <input id="few-10" type="radio" name="ten" value="2" onclick="values.updateArrayTwo(this.value, 3)">
+                <label for="few-10">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-10" type="radio" name="ten" value="3" onclick="values.updateArrayTwo(this.value, 3)">
+                <label for="sometimes-10">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-10" type="radio" name="ten" value="4" onclick="values.updateArrayTwo(this.value, 3)">
+                <label for="many-10">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-10" type="radio" name="ten" value="5" onclick="values.updateArrayTwo(this.value, 3)">
+                <label for="always-10">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>15. Tenho crenças que me sustentam.</span>
+            <div class="options">
+              <div>
+                <input id="never-15" type="radio" name="fifteen" value="0" onclick="values.updateArrayTwo(this.value, 4)" checked>
+                <label for="never-15">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-15" type="radio" name="fifteen" value="5" onclick="values.updateArrayTwo(this.value, 4)">
+                <label for="rarely-15">Raramente</label>
+              </div>
+              <div>
+                <input id="few-15" type="radio" name="fifteen" value="4" onclick="values.updateArrayTwo(this.value, 4)">
+                <label for="few-15">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-15" type="radio" name="fifteen" value="3" onclick="values.updateArrayTwo(this.value, 4)">
+                <label for="sometimes-15">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-15" type="radio" name="fifteen" value="2" onclick="values.updateArrayTwo(this.value, 4)">
+                <label for="many-15">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-15" type="radio" name="fifteen" value="1" onclick="values.updateArrayTwo(this.value, 4)">
+                <label for="always-15">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>17. Sou a pessoa que sempre desejei ser.</span>
+            <div class="options">
+              <div>
+                <input id="never-17" type="radio" name="seventeen" value="0" onclick="values.updateArrayTwo(this.value, 5)" checked>
+                <label for="never-17">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-17" type="radio" name="seventeen" value="5" onclick="values.updateArrayTwo(this.value, 5)">
+                <label for="rarely-17">Raramente</label>
+              </div>
+              <div>
+                <input id="few-17" type="radio" name="seventeen" value="4" onclick="values.updateArrayTwo(this.value, 5)">
+                <label for="few-17">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-17" type="radio" name="seventeen" value="3" onclick="values.updateArrayTwo(this.value, 5)">
+                <label for="sometimes-17">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-17" type="radio" name="seventeen" value="2" onclick="values.updateArrayTwo(this.value, 5)">
+                <label for="many-17">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-17" type="radio" name="seventeen" value="1" onclick="values.updateArrayTwo(this.value, 5)">
+                <label for="always-17">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>19. Sinto-me exausto(a) por causa do meu trabalho.</span>
+            <div class="options">
+              <div>
+                <input id="never-19" type="radio" name="nineteen" value="0" onclick="values.updateArrayTwo(this.value, 6)" checked>
+                <label for="never-19">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-19" type="radio" name="nineteen" value="1" onclick="values.updateArrayTwo(this.value, 6)">
+                <label for="rarely-19">Raramente</label>
+              </div>
+              <div>
+                <input id="few-19" type="radio" name="nineteen" value="2" onclick="values.updateArrayTwo(this.value, 6)">
+                <label for="few-19">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-19" type="radio" name="nineteen" value="3" onclick="values.updateArrayTwo(this.value, 6)">
+                <label for="sometimes-19">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-19" type="radio" name="nineteen" value="4" onclick="values.updateArrayTwo(this.value, 6)">
+                <label for="many-19">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-19" type="radio" name="nineteen" value="5" onclick="values.updateArrayTwo(this.value, 6)">
+                <label for="always-19">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>21. Sinto-me sufocado(a) pela quantidade de trabalho e pelo tanto de pacientes que preciso atender.</span>
+            <div class="options">
+              <div>
+                <input id="never-21" type="radio" name="twenty-one" value="0" onclick="values.updateArrayTwo(this.value, 7)" checked>
+                <label for="never-21">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-21" type="radio" name="twenty-one" value="1" onclick="values.updateArrayTwo(this.value, 7)">
+                <label for="rarely-21">Raramente</label>
+              </div>
+              <div>
+                <input id="few-21" type="radio" name="twenty-one" value="2" onclick="values.updateArrayTwo(this.value, 7)">
+                <label for="few-21">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-21" type="radio" name="twenty-one" value="3" onclick="values.updateArrayTwo(this.value, 7)">
+                <label for="sometimes-21">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-21" type="radio" name="twenty-one" value="4" onclick="values.updateArrayTwo(this.value, 7)">
+                <label for="many-21">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-21" type="radio" name="twenty-one" value="5" onclick="values.updateArrayTwo(this.value, 7)">
+                <label for="always-21">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>26. Sinto-me sufocado(a) pelo sistema que atuo.</span>
+            <div class="options">
+              <div>
+                <input id="never-26" type="radio" name="twenty-six" value="0" onclick="values.updateArrayTwo(this.value, 8)" checked>
+                <label for="never-26">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-26" type="radio" name="twenty-six" value="1" onclick="values.updateArrayTwo(this.value, 8)">
+                <label for="rarely-26">Raramente</label>
+              </div>
+              <div>
+                <input id="few-26" type="radio" name="twenty-six" value="2" onclick="values.updateArrayTwo(this.value, 8)">
+                <label for="few-26">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-26" type="radio" name="twenty-six" value="3" onclick="values.updateArrayTwo(this.value, 8)">
+                <label for="sometimes-26">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-26" type="radio" name="twenty-six" value="4" onclick="values.updateArrayTwo(this.value, 8)">
+                <label for="many-26">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-26" type="radio" name="twenty-six" value="5" onclick="values.updateArrayTwo(this.value, 8)">
+                <label for="always-26">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>29. Sou uma pessoa muito sensível.</span>
+            <div class="options">
+              <div>
+                <input id="never-29" type="radio" name="thirty" value="0" onclick="values.updateArrayTwo(this.value, 9)" checked>
+                <label for="never-29">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-29" type="radio" name="thirty" value="5" onclick="values.updateArrayTwo(this.value, 9)">
+                <label for="rarely-29">Raramente</label>
+              </div>
+              <div>
+                <input id="few-29" type="radio" name="thirty" value="4" onclick="values.updateArrayTwo(this.value, 9)">
+                <label for="few-29">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-29" type="radio" name="thirty" value="3" onclick="values.updateArrayTwo(this.value, 9)">
+                <label for="sometimes-29">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-29" type="radio" name="thirty" value="2" onclick="values.updateArrayTwo(this.value, 9)">
+                <label for="many-29">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-29" type="radio" name="thirty" value="1" onclick="values.updateArrayTwo(this.value, 9)">
+                <label for="always-29">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="second-total">
+            <span>Total: 0</span>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="tv">
+      <form>
+        <fieldset>
+          <legend>TV</legend>
+          <div class="question">
+            <span>2. Tenho preocupações com mais de uma pessoa que estou ajudando.</span>
+            <div class="options">
+              <div>
+                <input id="never-2" type="radio" name="two" value="0" onclick="values.updateArrayThree(this.value, 0)" checked>
+                <label for="never-2">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-2" type="radio" name="two" value="1" onclick="values.updateArrayThree(this.value, 0)">
+                <label for="rarely-2">Raramente</label>
+              </div>
+              <div>
+                <input id="few-2" type="radio" name="two" value="2" onclick="values.updateArrayThree(this.value, 0)">
+                <label for="few-2">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-2" type="radio" name="two" value="3" onclick="values.updateArrayThree(this.value, 0)">
+                <label for="sometimes-2">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-2" type="radio" name="two" value="4" onclick="values.updateArrayThree(this.value, 0)">
+                <label for="many-2">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-2" type="radio" name="two" value="5" onclick="values.updateArrayThree(this.value, 0)">
+                <label for="always-2">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>5. Sons inesperados me assustam ou me causam sobressaltos</span>
+            <div class="options">
+              <div>
+                <input id="never-5" type="radio" name="five" value="0" onclick="values.updateArrayThree(this.value, 1)" checked>
+                <label for="never-5">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-5" type="radio" name="five" value="1" onclick="values.updateArrayThree(this.value, 1)">
+                <label for="rarely-5">Raramente</label>
+              </div>
+              <div>
+                <input id="few-5" type="radio" name="five" value="2" onclick="values.updateArrayThree(this.value, 1)">
+                <label for="few-5">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-5" type="radio" name="five" value="3" onclick="values.updateArrayThree(this.value, 1)">
+                <label for="sometimes-5">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-5" type="radio" name="five" value="4" onclick="values.updateArrayThree(this.value, 1)">
+                <label for="many-5">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-5" type="radio" name="five" value="5" onclick="values.updateArrayThree(this.value, 1)">
+                <label for="always-5">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>7. Acho difícil separar minha vida pessoal da minha vida profissional.</span>
+            <div class="options">
+              <div>
+                <input id="never-7" type="radio" name="seven" value="0" onclick="values.updateArrayThree(this.value, 2)" checked>
+                <label for="never-7">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-7" type="radio" name="seven" value="1" onclick="values.updateArrayThree(this.value, 2)">
+                <label for="rarely-7">Raramente</label>
+              </div>
+              <div>
+                <input id="few-7" type="radio" name="seven" value="2" onclick="values.updateArrayThree(this.value, 2)">
+                <label for="few-7">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-7" type="radio" name="seven" value="3" onclick="values.updateArrayThree(this.value, 2)">
+                <label for="sometimes-7">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-7" type="radio" name="seven" value="4" onclick="values.updateArrayThree(this.value, 2)">
+                <label for="many-7">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-7" type="radio" name="seven" value="5" onclick="values.updateArrayThree(this.value, 2)">
+                <label for="always-7">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>9. Creio que posso ter sido "infectado" pelo estresse traumático daqueles que atendo.</span>
+            <div class="options">
+              <div>
+                <input id="never-9" type="radio" name="nine" value="0" onclick="values.updateArrayThree(this.value, 3)" checked>
+                <label for="never-9">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-9" type="radio" name="nine" value="1" onclick="values.updateArrayThree(this.value, 3)">
+                <label for="rarely-9">Raramente</label>
+              </div>
+              <div>
+                <input id="few-9" type="radio" name="nine" value="2" onclick="values.updateArrayThree(this.value, 3)">
+                <label for="few-9">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-9" type="radio" name="nine" value="3" onclick="values.updateArrayThree(this.value, 3)">
+                <label for="sometimes-9">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-9" type="radio" name="nine" value="4" onclick="values.updateArrayThree(this.value, 3)">
+                <label for="many-9">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-9" type="radio" name="nine" value="5" onclick="values.updateArrayThree(this.value, 3)">
+                <label for="always-9">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>11. Por causa do meu trabalho me sinto tenso com relação a várias coisas.</span>
+            <div class="options">
+              <div>
+                <input id="never-11" type="radio" name="eleven" value="0" onclick="values.updateArrayThree(this.value, 4)" checked>
+                <label for="never-11">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-11" type="radio" name="eleven" value="1" onclick="values.updateArrayThree(this.value, 4)">
+                <label for="rarely-11">Raramente</label>
+              </div>
+              <div>
+                <input id="few-11" type="radio" name="eleven" value="2" onclick="values.updateArrayThree(this.value, 4)">
+                <label for="few-11">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-11" type="radio" name="eleven" value="3" onclick="values.updateArrayThree(this.value, 4)">
+                <label for="sometimes-11">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-11" type="radio" name="eleven" value="4" onclick="values.updateArrayThree(this.value, 4)">
+                <label for="many-11">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-11" type="radio" name="eleven" value="5" onclick="values.updateArrayThree(this.value, 4)">
+                <label for="always-11">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>13. Sinto-me deprimido(a) por causa do meu trabalho.</span>
+            <div class="options">
+              <div>
+                <input id="never-13" type="radio" name="thirteen" value="0" onclick="values.updateArrayThree(this.value, 5)" checked>
+                <label for="never-13">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-13" type="radio" name="thirteen" value="1" onclick="values.updateArrayThree(this.value, 5)">
+                <label for="rarely-13">Raramente</label>
+              </div>
+              <div>
+                <input id="few-13" type="radio" name="thirteen" value="2" onclick="values.updateArrayThree(this.value, 5)">
+                <label for="few-13">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-13" type="radio" name="thirteen" value="3" onclick="values.updateArrayThree(this.value, 5)">
+                <label for="sometimes-13">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-13" type="radio" name="thirteen" value="4" onclick="values.updateArrayThree(this.value, 5)">
+                <label for="many-13">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-13" type="radio" name="thirteen" value="5" onclick="values.updateArrayThree(this.value, 5)">
+                <label for="always-13">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>14. Sinto-me como se estivesse vivendo o trauma de alguém que eu atendi.</span>
+            <div class="options">
+              <div>
+                <input id="never-14" type="radio" name="fourteen" value="0" onclick="values.updateArrayThree(this.value, 6)" checked>
+                <label for="never-14">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-14" type="radio" name="fourteen" value="1" onclick="values.updateArrayThree(this.value, 6)">
+                <label for="rarely-14">Raramente</label>
+              </div>
+              <div>
+                <input id="few-14" type="radio" name="fourteen" value="2" onclick="values.updateArrayThree(this.value, 6)">
+                <label for="few-14">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-14" type="radio" name="fourteen" value="3" onclick="values.updateArrayThree(this.value, 6)">
+                <label for="sometimes-14">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-14" type="radio" name="fourteen" value="4" onclick="values.updateArrayThree(this.value, 6)">
+                <label for="many-14">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-14" type="radio" name="fourteen" value="5" onclick="values.updateArrayThree(this.value, 6)">
+                <label for="always-14">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>23. Evito certas atividades ou situações porque elas me fazem lembrar as experiências assustadoras vividas pelas pessoas que ajudo.</span>
+            <div class="options">
+              <div>
+                <input id="never-23" type="radio" name="twenty-three" value="0" onclick="values.updateArrayThree(this.value, 7)" checked>
+                <label for="never-23">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-23" type="radio" name="twenty-three" value="1" onclick="values.updateArrayThree(this.value, 7)">
+                <label for="rarely-23">Raramente</label>
+              </div>
+              <div>
+                <input id="few-23" type="radio" name="twenty-three" value="2" onclick="values.updateArrayThree(this.value, 7)">
+                <label for="few-23">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-23" type="radio" name="twenty-three" value="3" onclick="values.updateArrayThree(this.value, 7)">
+                <label for="sometimes-23">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-23" type="radio" name="twenty-three" value="4" onclick="values.updateArrayThree(this.value, 7)">
+                <label for="many-23">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-23" type="radio" name="twenty-three" value="5" onclick="values.updateArrayThree(this.value, 7)">
+                <label for="always-23">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>25. Como resultado do meu trabalho, tenho pensamentos invasivos e assustadores.</span>
+            <div class="options">
+              <div>
+                <input id="never-25" type="radio" name="twenty-five" value="0" onclick="values.updateArrayThree(this.value, 8)" checked>
+                <label for="never-25">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-25" type="radio" name="twenty-five" value="1" onclick="values.updateArrayThree(this.value, 8)">
+                <label for="rarely-25">Raramente</label>
+              </div>
+              <div>
+                <input id="few-25" type="radio" name="twenty-five" value="2" onclick="values.updateArrayThree(this.value, 8)">
+                <label for="few-25">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-25" type="radio" name="twenty-five" value="3" onclick="values.updateArrayThree(this.value, 8)">
+                <label for="sometimes-25">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-25" type="radio" name="twenty-five" value="4" onclick="values.updateArrayThree(this.value, 8)">
+                <label for="many-25">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-25" type="radio" name="twenty-five" value="5" onclick="values.updateArrayThree(this.value, 8)">
+                <label for="always-25">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="question">
+            <span>28. Não consigo recordar de partes importantes do meu trabalho com vítimas de trauma.</span>
+            <div class="options">
+              <div>
+                <input id="never-28" type="radio" name="twenty-eight" value="0" onclick="values.updateArrayThree(this.value, 9)" checked>
+                <label for="never-28">Nunca</label>
+              </div>
+              <div>
+                <input id="rarely-28" type="radio" name="twenty-eight" value="1" onclick="values.updateArrayThree(this.value, 9)">
+                <label for="rarely-28">Raramente</label>
+              </div>
+              <div>
+                <input id="few-28" type="radio" name="twenty-eight" value="2" onclick="values.updateArrayThree(this.value, 9)">
+                <label for="few-28">Poucas Vezes</label>
+              </div>
+              <div>
+                <input id="sometimes-28" type="radio" name="twenty-eight" value="3" onclick="values.updateArrayThree(this.value, 9)">
+                <label for="sometimes-28">Algumas Vezes</label>
+              </div>
+              <div>
+                <input id="many-28" type="radio" name="twenty-eight" value="4" onclick="values.updateArrayThree(this.value, 9)">
+                <label for="many-28">Várias Vezes</label>
+              </div>
+              <div>
+                <input id="always-28" type="radio" name="twenty-eight" value="5" onclick="values.updateArrayThree(this.value, 9)">
+                <label for="always-28">Quase Sempre</label>
+              </div>
+            </div>
+          </div>
+          <div class="third-total">
+            <span>Total: 0</span>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
