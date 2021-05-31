@@ -74,4 +74,29 @@ div span {
 
 label {
   font-size: 1.1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 92.75%;
+  }
+
+  header {
+    margin: 2rem 1rem;
+  }
+
+  fieldset {
+    margin: 2rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {  
+  html {
+    font-size: 87.5%;
+  }
+
+  .options {
+    flex-direction: column;
+  }
 }
